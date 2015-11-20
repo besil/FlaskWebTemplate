@@ -13,3 +13,5 @@ if __name__ == '__main__':
     os.rename("TemplateProject", project_name)
     os.remove("init.py")
     call("rm -rf .git", shell=True)
+    call("rm LICENSE", shell=True)
+    call("rm README.md", shell=True)
