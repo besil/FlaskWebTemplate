@@ -1,6 +1,5 @@
 import argparse
 import os
-import shutil
 from subprocess import call
 
 if __name__ == '__main__':
@@ -14,4 +13,3 @@ if __name__ == '__main__':
     os.rename("TemplateProject", project_name)
     os.remove("init.py")
     call("rm -rf .git", shell=True)
-    # shutil.rmtree(".git")
