@@ -1,4 +1,6 @@
 # FlaskWebTemplate
 A lightweight webapp template for flask development
 
-A simple template for getting started with Flask and some JS libraries
+A simple template for getting started with Flask and some JS libraries.
+
+Start init.py to get started
