@@ -1,5 +1,6 @@
 import argparse
 import os
+import shutil
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Init script")
@@ -11,3 +12,4 @@ if __name__ == '__main__':
 
     os.rename("TemplateProject", project_name)
     os.remove("init.py")
+    shutil.rmtree(".git")
