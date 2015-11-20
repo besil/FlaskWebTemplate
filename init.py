@@ -14,5 +14,6 @@ if __name__ == '__main__':
     call("rm LICENSE", shell=True)
     call("rm README.md", shell=True)
     call("cd TemplateProject/", shell=True)
-    os.rename("TemplateProject/webapp/static/lib; bash install_libs.sh", project_name)
+    call("TemplateProject/webapp/static/lib; bash install_libs.sh", project_name)
+    os.rename("TemplateProject", project_name)
     os.remove("init.py")
