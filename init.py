@@ -10,6 +10,7 @@ if __name__ == '__main__':
 
     project_name = args.project_name
 
+    print("Installing js default libraries", flush=True)
     savedPath = os.getcwd()
     os.chdir("./TemplateProject/webapp/static/lib")
     call("bash install_libs.sh", shell=True)
