@@ -10,7 +10,11 @@ if __name__ == '__main__':
 
     project_name = args.project_name
 
-    call("cd TemplateProject/webapp/static/lib; bash install_libs.sh", shell=True)
+    savedPath = os.getcwd()
+    os.chdir("./TemplateProject/webapp/static/lib")
+    call("bash install_libs.sh", shell=True)
+    os.chdir(savedPath)
+    
     call("rm -rf .git", shell=True)
     call("rm LICENSE", shell=True)
     call("rm README.md", shell=True)
