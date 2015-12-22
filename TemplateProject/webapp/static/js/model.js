@@ -2,12 +2,12 @@
 
 class Model {
 	constructor(url) {
-		this.remote_endpoint = url;
+		this.remote_endpoint = location.origin;
 	}
 
 	// Defines here your methods for REST api
 	data() {
-		return JSON.parse(this.httpGet(this.remote_endpoint+"example/data"));
+		return JSON.parse(this.httpGet(this.remote_endpoint+"/example/data"));
 	}
 		
 	httpGet(theUrl) {
